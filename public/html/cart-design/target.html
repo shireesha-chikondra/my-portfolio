@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>not scrolling just highltnting the contenet</title>
+    <style>
+        header{
+            font-size:24px;
+            text-align:center;
+            padding:20px;
+        }
+         section{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding:20px;
+            text-align: center;
+        }
+        .cart{
+            border:1px solid gray;
+            width:300px;
+            height:200px;
+
+        }
+        .cart:target{
+           background-color: blue;
+           color:white;
+
+           border-radius: 100%;
+           text-align: center;
+
+           transition:3;
+
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#html">HTML</a><span>|</span>
+            <a href="#css">CSS</a><span>|</span>
+            <a href="#js">JAVASCRIPT</a><span>|</span>
+
+        </nav>
+
+    </header>
+    <section>
+        <div class="cart" id="html">
+            <h3>Html</h3>
+            <span>Hyper text markup language</span>
+
+
+        </div>
+        <div class="cart" id="css">
+            <h3>Css</h3>
+            <span>cascading style sheet</span>
+
+
+        </div>
+        <div class="cart" id="js">
+            <h3>Java Script</h3>
+            <span>manupulate the dom</span>
+
+
+        </div>
+    </section>
+</body>
+</html>
